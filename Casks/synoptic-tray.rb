@@ -1,12 +1,12 @@
 cask "synoptic-tray" do
-  version "0.2.2"
+  version "0.2.3"
   depends_on macos: ">= :ventura"
 
   if Hardware::CPU.arm?
-    sha256 "37b6b9d7738b0d6d360e87126cadb060e300080606cb1d2199f3c5785e701117"
+    sha256 "081c36e255bd154316bead0ca4edefe065f3283b0903040eedb6286f1c13012a"
     url "https://github.com/aumgn/synoptic/releases/download/v#{version}/Synoptic-Tray-v#{version}-macos-arm64.dmg"
   else
-    sha256 "0ed753dcf98af3ae11362dd7ee2bac6d7da95b7bba3139523d5e0470607bd7ab"
+    sha256 "f256652d54f0f3fafd6b225c570ec131fbde72b965e29f195be717711e282dba"
     url "https://github.com/aumgn/synoptic/releases/download/v#{version}/Synoptic-Tray-v#{version}-macos-x86_64.dmg"
   end
 
